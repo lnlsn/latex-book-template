@@ -1,0 +1,63 @@
+\RequirePackage{ifpdf} % are we producing PDF ?
+\documentclass[12pt,a4paper]{book}
+%% Packages
+\usepackage{amsmath}
+\usepackage{geometry,color,graphicx}
+\usepackage[pdftex]{hyperref}
+\ifpdf
+   \hypersetup{colorlinks=blue}
+\else
+   \hypersetup{colorlinks=black}
+\fi
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{calc}
+\fancyheadoffset[LE,RO]{\marginparsep+\marginparwidth}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\fancypagestyle{plain}{%
+  \fancyhead{} % get rid of headers
+  \renewcommand{\headrulewidth}{0pt} % and the line
+}
+
+%% TITLE information
+\title{\LaTeXe{} Book Template}
+\author{James T. Kirk}
+\date{May 1, 2014}
+
+%% Customizations
+\input{custom/formatting.tex}
+
+\begin{document}
+
+\begin{frontmatter}
+
+  \maketitle
+  \let\cleardoublepage\clearpage
+  \include{frontmatter/dedication/index}
+  \include{frontmatter/about-book/index}
+  \include{frontmatter/about-author/index}
+
+\end{frontmatter}
+\begin{mainmatter}
+
+  \tableofcontents
+  \let\cleardoublepage\clearpage
+  \include{mainmatter/chapter1/index}
+  \include{mainmatter/chapter2/index}
+
+\end{mainmatter}
+
+\appendix
+
+\begin{backmatter}
+  \let\cleardoublepage\clearpage
+  \include{backmatter/copyright/index}
+
+\end{backmatter}
+\end{document}
