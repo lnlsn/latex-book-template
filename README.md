@@ -62,13 +62,13 @@ To generate pdf file from your book:
 make pdf
 ```
 
-To cleanup temporary files and dist files:
+To clean up temporary files and dist files:
 
 ```bash
 make clean
 ```
 
-To generate Latex ditribution:
+To generate Latex distribution:
 
 ```bash
 make dist
