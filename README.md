@@ -26,21 +26,31 @@ The directories below are for creating your book content.
 
 
 ```bash
-
-    |-backmatter      => for pages which will be inserted as last items in your book.
-    |---copyright
-    |-custom          => contains files with customizations about your book.
-    |-frontmatter     => for pages which will be after \begin{document}.
-    |---about-author
-    |-----media
-    |---about-book
-    |---dedication
-    |-mainmatter      => for your chapter's book.
-    |---chapter1
-    |-----media
-    |---chapter2
-    |-----media
-    |---preface
+├── backmatter                    => for pages which will be inserted as last items in your book.
+│   └── copyright
+│       └── index.tex
+├── book.tex
+├── custom                        => contains files with customizations about your book.
+│   └── formatting.tex
+├── frontmatter                   => for pages which will be after \begin{document}.
+│   ├── about-author
+│   │   ├── index.tex
+│   │   └── media
+│   │       └── james-t-kirk.jpg
+│   ├── about-book
+│   │   └── index.tex
+│   └── dedication
+│       └── index.tex
+└── mainmatter                    => for your chapter's book.
+	├── chapter1
+	│   ├── index.tex
+	│   └── media
+	├── chapter2
+	│   ├── index.tex
+	│   └── media
+	│       └── choices.jpg
+	└── preface
+		└── index.tex
 ```
 
 
