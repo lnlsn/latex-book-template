@@ -17,7 +17,7 @@ Lenilson Jose Dias
 To get this template:
 
 ```bash
-git clone http://github.com/nixusr/latex-book-template.git
+git clone http://github.com/lnlsn/latex-book-template.git
 ```
 
 ## How to use
