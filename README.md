@@ -12,6 +12,7 @@ Lenilson Jose Dias
 * [Latex](http://latex-project.org/)
 * [latex-mk](http://latex-mk.sourceforge.net/)
 * BSD [Make](http://en.wikipedia.org/wiki/Make_%28software%29)
+* [GV - GNU Project - Free Software Foundation](https://www.gnu.org/software/gv/ "GV - GNU Project - Free Software Foundation")
 
 ## How to install
 To get this template:
